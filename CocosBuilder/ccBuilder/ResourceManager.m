@@ -516,7 +516,7 @@
     
     if (!resources)
     {
-        [self updateResourcesForPath:[path stringByDeletingLastPathComponent]];
+        //[self updateResourcesForPath:[path stringByDeletingLastPathComponent]];
         return;
     }
     
