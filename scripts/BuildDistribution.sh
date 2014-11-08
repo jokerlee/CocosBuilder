@@ -21,7 +21,7 @@ xcodebuild -target CocosBuilder -configuration Debug build
 # Create archives
 cd ..
 # mkdir "build/CocosBuilder-$CCB_VERSION-examples"
-mkdir "build/CocosBuilder-$CCB_VERSION-CCBReader"
+mkdir -p "build/CocosBuilder-$CCB_VERSION-CCBReader"
 # cp -RL "Examples" "build/CocosBuilder-$CCB_VERSION-examples/"
 cp -RL "Examples/CocosBuilderExample/libs/CCBReader" "build/CocosBuilder-$CCB_VERSION-CCBReader/"
 
