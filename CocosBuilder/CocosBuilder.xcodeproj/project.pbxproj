@@ -12,6 +12,7 @@
 		58FA2034162D73F3006B8856 /* TB_bottomPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FA2031162D73F3006B8856 /* TB_bottomPanel.png */; };
 		58FA2035162D73F3006B8856 /* TB_leftPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FA2032162D73F3006B8856 /* TB_leftPanel.png */; };
 		58FA2036162D73F3006B8856 /* TB_rightPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FA2033162D73F3006B8856 /* TB_rightPanel.png */; };
+		6ABD0F2B1ABA7120008729FD /* CCFontDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABD0F261ABA7031008729FD /* CCFontDefinition.m */; };
 		77055FB513D0E5CA009DD63A /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055FB313D0E5CA009DD63A /* logo-icon.png */; };
 		77055FB613D0E5CA009DD63A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055FB413D0E5CA009DD63A /* logo.png */; };
 		77156DB1137F0351005EF746 /* CCBSpriteSheetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77156DB0137F0351005EF746 /* CCBSpriteSheetParser.m */; };
@@ -872,6 +873,7 @@
 		58FA2031162D73F3006B8856 /* TB_bottomPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_bottomPanel.png; sourceTree = "<group>"; };
 		58FA2032162D73F3006B8856 /* TB_leftPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_leftPanel.png; sourceTree = "<group>"; };
 		58FA2033162D73F3006B8856 /* TB_rightPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_rightPanel.png; sourceTree = "<group>"; };
+		6ABD0F261ABA7031008729FD /* CCFontDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFontDefinition.m; sourceTree = "<group>"; };
 		77055FB313D0E5CA009DD63A /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
 		77055FB413D0E5CA009DD63A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		77156DAF137F0351005EF746 /* CCBSpriteSheetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBSpriteSheetParser.h; sourceTree = "<group>"; };
@@ -3316,6 +3318,7 @@
 		E36A270F152263B4004986A8 /* cocos2d */ = {
 			isa = PBXGroup;
 			children = (
+				6ABD0F261ABA7031008729FD /* CCFontDefinition.m */,
 				E3893C8B1666B9F500299482 /* CCClippingNode.h */,
 				E3893C8C1666B9F500299482 /* CCClippingNode.m */,
 				E3893C8D1666B9F500299482 /* CCDrawNode.h */,
@@ -5227,6 +5230,7 @@
 				E3A4746D16D4389D00DB0D61 /* CDOpenALSupport.m in Sources */,
 				E3A4746E16D4389D00DB0D61 /* CDXMacOSXSupport.m in Sources */,
 				E3A4746F16D4389D00DB0D61 /* CDXPropertyModifierAction.m in Sources */,
+				6ABD0F2B1ABA7120008729FD /* CCFontDefinition.m in Sources */,
 				E3A4747016D4389D00DB0D61 /* CocosDenshion.m in Sources */,
 				E3A4747216D4389D00DB0D61 /* SimpleAudioEngine.m in Sources */,
 				E3B5EE8916D6E0AA00C07990 /* InspectorFloatXY.m in Sources */,
