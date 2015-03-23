@@ -63,8 +63,8 @@
             RMDirectory* data = res.data;
             [self search:data key:key type:type array:array];
         }else{
-            NSString* str1 = [[[res.filePath lastPathComponent] lowercaseString] substringToIndex:MIN([res.filePath lastPathComponent].length, [key length])];
-            if ([str1 isEqualToString:key]) {
+            NSString* str1 = [[[res.filePath lastPathComponent] lowercaseString] substringToIndex:[res.filePath lastPathComponent].length];
+            if ([str1 rangeOfString:key].length > 0) {
                 RMResource* sres = [[[RMResource alloc]init] autorelease];
                 sres.filePath = res.filePath;
                 sres.modifiedTime = res.modifiedTime;
