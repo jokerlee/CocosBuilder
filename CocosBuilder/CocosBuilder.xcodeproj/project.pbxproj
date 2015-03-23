@@ -13,6 +13,7 @@
 		58FA2035162D73F3006B8856 /* TB_leftPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FA2032162D73F3006B8856 /* TB_leftPanel.png */; };
 		58FA2036162D73F3006B8856 /* TB_rightPanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58FA2033162D73F3006B8856 /* TB_rightPanel.png */; };
 		6ABD0F2B1ABA7120008729FD /* CCFontDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABD0F261ABA7031008729FD /* CCFontDefinition.m */; };
+		6AC325A21ABFAA5C009D1E39 /* ResourceManagerSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC325A11ABFAA5C009D1E39 /* ResourceManagerSearch.m */; };
 		77055FB513D0E5CA009DD63A /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055FB313D0E5CA009DD63A /* logo-icon.png */; };
 		77055FB613D0E5CA009DD63A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055FB413D0E5CA009DD63A /* logo.png */; };
 		77156DB1137F0351005EF746 /* CCBSpriteSheetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77156DB0137F0351005EF746 /* CCBSpriteSheetParser.m */; };
@@ -874,6 +875,8 @@
 		58FA2032162D73F3006B8856 /* TB_leftPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_leftPanel.png; sourceTree = "<group>"; };
 		58FA2033162D73F3006B8856 /* TB_rightPanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TB_rightPanel.png; sourceTree = "<group>"; };
 		6ABD0F261ABA7031008729FD /* CCFontDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFontDefinition.m; sourceTree = "<group>"; };
+		6AC325A01ABFAA5C009D1E39 /* ResourceManagerSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManagerSearch.h; sourceTree = "<group>"; };
+		6AC325A11ABFAA5C009D1E39 /* ResourceManagerSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManagerSearch.m; sourceTree = "<group>"; };
 		77055FB313D0E5CA009DD63A /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
 		77055FB413D0E5CA009DD63A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		77156DAF137F0351005EF746 /* CCBSpriteSheetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBSpriteSheetParser.h; sourceTree = "<group>"; };
@@ -3900,6 +3903,8 @@
 		E3C5C1A11504D144000CF6F3 /* Resource Manager */ = {
 			isa = PBXGroup;
 			children = (
+				6AC325A01ABFAA5C009D1E39 /* ResourceManagerSearch.h */,
+				6AC325A11ABFAA5C009D1E39 /* ResourceManagerSearch.m */,
 				E3C5C1A21504D17E000CF6F3 /* ResourceManager.h */,
 				E3C5C1A31504D17E000CF6F3 /* ResourceManager.m */,
 				E3C5C1B315075CDD000CF6F3 /* ResourceManagerUtil.h */,
@@ -5220,6 +5225,7 @@
 				E3347417169C5402000737CC /* Utils.m in Sources */,
 				E334741C169DC5A7000737CC /* APIDocsWindow.m in Sources */,
 				E3127AA516C1D8E600D09AA4 /* CCBDirectoryComparer.m in Sources */,
+				6AC325A21ABFAA5C009D1E39 /* ResourceManagerSearch.m in Sources */,
 				E3D6BA1E16C46E11006AFE0A /* SequencerSoundChannel.m in Sources */,
 				E3D6BA2316C46E41006AFE0A /* SequencerCallbackChannel.m in Sources */,
 				E3D6BA2616C46E91006AFE0A /* SequencerChannel.m in Sources */,
