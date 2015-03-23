@@ -242,6 +242,9 @@ static CocosBuilderAppDelegate* sharedAppDelegate;
     }
     
     [previewViewContainer addSubview:previewView];
+    NSRect frame = previewView.superview.frame;
+    frame.size.height = 0;
+    previewView.superview.frame = frame;
     
     // Setup project display
     projectOutlineHandler = [[ResourceManagerOutlineHandler alloc] initWithOutlineView:outlineProject resType:kCCBResTypeNone preview:previewViewOwner];
