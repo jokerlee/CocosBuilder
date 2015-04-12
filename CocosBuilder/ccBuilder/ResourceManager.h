@@ -135,6 +135,8 @@ enum
     
     NSArray* systemFontList;
     
+    NSMutableDictionary * symbolLinks;
+    
     BOOL tooManyDirectoriesAdded;
 }
 

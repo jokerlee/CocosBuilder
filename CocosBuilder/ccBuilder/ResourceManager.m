@@ -344,6 +344,7 @@
     pathWatcher.ignoreEventsFromSubDirs = YES;
     pathWatcher.delegate = self;
     resourceObserver = [[NSMutableArray alloc] init];
+    symbolLinks = [[NSMutableDictionary alloc] init];
     
     [self loadFontListTTF];
     
@@ -508,6 +509,11 @@
 
 - (void) updateResourcesForPath:(NSString*) path
 {
+    NSString * symbolLinkOriginPath = [symbolLinks valueForKey:path];
+    if (symbolLinkOriginPath != nil) {
+        path = symbolLinkOriginPath;
+    }
+    
     NSFileManager* fm = [NSFileManager defaultManager];
     RMDirectory* dir = [directories objectForKey:path];
     
@@ -745,6 +751,19 @@
         dir.count = 1;
         dir.dirPath = dirPath;
         [directories setObject:dir forKey:dirPath];
+        
+        // check if is symbol link
+        NSFileManager * fm = [NSFileManager defaultManager];
+        NSError * error;
+        NSDictionary * attrs = [fm attributesOfItemAtPath:dirPath error:&error];
+        if ([attrs valueForKey:NSFileType] == NSFileTypeSymbolicLink) {
+            NSString * parent = [dirPath stringByDeletingLastPathComponent];
+            NSString * dst = [fm destinationOfSymbolicLinkAtPath:dirPath error:&error];
+            dst = [[parent stringByAppendingPathComponent:dst] stringByStandardizingPath];
+            [symbolLinks setValue:dirPath forKey:dst];
+            NSLog(@"found symbol link: %@ -> %@", dirPath, dst);
+        }
+        
         
         [self updatedWatchedPaths];
     }
